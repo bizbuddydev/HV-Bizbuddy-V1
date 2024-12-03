@@ -126,10 +126,10 @@ def main():
         st.dataframe(search_data['Search Query'], use_container_width=True)
         
     with sq_col2:
-        seo_insights = generate_seo_insights(search_data)
-        st.markdown(seo_insights)
-        encoded_message = quote(str(seo_insights))
-        seo_url = f"https://bizbuddyv1-seobuddy.streamlit.app?message={encoded_message}"
+        #seo_insights = generate_seo_insights(search_data)
+        #st.markdown(seo_insights)
+        #encoded_message = quote(str(seo_insights))
+        #seo_url = f"https://bizbuddyv1-seobuddy.streamlit.app?message={encoded_message}"
         st.link_button("Check Out our SEO Helper!!", seo_url)
 
 # Execute the main function only when the script is run directly
