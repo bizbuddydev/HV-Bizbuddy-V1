@@ -392,7 +392,7 @@ def generate_page_summary(landing_page_summary):
     llm_summary = "### Page Performance Summary\n\n"
 
     # Display summary for each relevant page and append to LLM summary
-    for _, row in filtered_summary.iterrows():
+    for _, row in landing_page_summary.iterrows():
         page_name = row["Page Name"]
         visitors = row["Total_Visitors"]
         sessions = row["Sessions"]
