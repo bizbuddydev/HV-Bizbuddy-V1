@@ -109,7 +109,6 @@ def main():
     
         # Get landing page summary (now includes leads)
         landing_page_summary = summarize_landing_pages(lp_df_30_days, event_data)
-        st.write(landing_page_summary)
         generate_page_summary(landing_page_summary)
         
         llm_input = st.session_state.get("page_summary_llm", "")
