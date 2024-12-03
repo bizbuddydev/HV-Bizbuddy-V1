@@ -6,10 +6,11 @@ client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 # Business context for session memory
 business_context = """
-Answer these questions based on this context: The data is from a one-person dietitian business that began about a year ago. The dietitian has some technical 
-skills and seeks to use GA4 data to grow her website’s performance and make clear, actionable business decisions. Keep insights simple, specific, and free from jargon. 
-Keep a few key things in mind, she is in lynnwood Washing just outside Seattle. She is hoping to work specifcally with Adults with Eating disorders. A conversion event 
-for her is someone going to the contact page and filling out a contact form (a lead). Keep in mind this data is from this year summarized for that whole time period.
+Answer these questions based on this context: The data is from a small, family-owned hotel located in Port Madison, Wisconsin, that has been in business for 
+several years. The hotel owners have some basic technical skills and are looking to use GA4 data to improve their website’s performance, particularly focusing 
+on increasing bookings and attracting more guests. Keep insights clear, actionable, and free from jargon. The hotel caters primarily to leisure travelers and 
+is focused on enhancing guest experiences, providing a relaxing atmosphere, and increasing local tourism. A key conversion event for the hotel is a visitor 
+completing a booking on the website. The data you’re working with is from this month, summarized for the whole time period.
 """
 
 def initialize_llm_context():
