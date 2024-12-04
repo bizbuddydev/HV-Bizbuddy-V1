@@ -96,10 +96,10 @@ def main():
     with acq_col2:
         describe_top_sources(summarize_monthly_data(df_30_days, event_data)[1])
         
-        temp_url = "https://bizbuddyv1-ppcbuddy.streamlit.app/"
+        temp_url = "https://hv-bizbuddyv1-paidsearch.streamlit.app/"
         st.markdown("Search and social ads are key to driving traffic. Check out these tools to help you get going.")
         st.link_button("Paid Search - Helper", temp_url)
-        st.link_button("Social Ads - Helper", temp_url)
+        st.link_button("Social Ads - In development", temp_url)
 
     # Landing page analysis section
     st.divider()
